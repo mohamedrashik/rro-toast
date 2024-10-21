@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.droid.aosp.overlay.toast">
+	<uses-permission android:name="android.permission.MODIFY_THEME_OVERLAY" />
+
+    <application android:hasCode="false" 
+	 android:versionCode="1"
+    android:versionName="1.0"/>
+    <overlay         android:priority="1"
+	                android:targetPackage="android"
+                   android:targetName="ToastOverlayableResources"
+				   android:resourcesMap="@xml/overlays"
+				   android:isStatic="true"
+				   />
+</manifest>
